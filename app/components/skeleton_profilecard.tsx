@@ -14,7 +14,7 @@ export default function SkeletonProfileCard() {
           initial={{ opacity: 0.3 }}
           animate={{ opacity: [0.3, 1, 0.3] }}
           transition={{ duration: 3, repeat: Infinity }}
-          className="rounded-xl text-[1rem] bg-[#CDD5E0] w-48"
+          className="rounded-xl text-[1rem] bg-[#CDD5E0]"
         >
           <motion.p
             initial={{ opacity: 0.3 }}
@@ -22,22 +22,22 @@ export default function SkeletonProfileCard() {
             transition={{ duration: 3, repeat: Infinity }}
             className="text-[#CDD5E0] text-[1rem]"
           >
-            test
+            test name
           </motion.p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0.3 }}
           animate={{ opacity: [0.3, 1, 0.3] }}
           transition={{ duration: 3, repeat: Infinity }}
-          className="rounded-xl text-[0.75rem] bg-[#CDD5E0] w-96"
+          className="rounded-xl text-[0.75rem] bg-[#CDD5E0]"
         >
           <motion.p
             initial={{ opacity: 0.3 }}
             animate={{ opacity: [0.3, 1, 0.3] }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="text-[#CDD5E0] text-[0.75rem]"
+            className="text-[#CDD5E0] text-[0.75rem] sm:w-56 lg:w-96"
           >
-            test
+            test description description
           </motion.p>
         </motion.div>
       </div>

@@ -41,7 +41,7 @@ export const SearchIcon = ({ className }: { className: string }) => {
 export default function Search({ setUser }: { setUser: (user: User) => void }) {
   const [searchValue, setSearchValue] = useState<string>("");
   const valueRef = useRef<HTMLInputElement>(null);
-  const [isFetch, setIsFetch] = useState(false);
+  const [isFetch, setIsFetch] = useState(!false);
 
   const [searchUser, setSearchUser] = useState<{
     userinfo: { data: User };
@@ -72,7 +72,7 @@ export default function Search({ setUser }: { setUser: (user: User) => void }) {
 
   return (
     <div
-      className=" w-[90%] lg:w-[600px] h-[60px]  mt-8  rounded-2xl flex gap-4 justify-center 
+      className=" w-[90%] sm:w-[60%] lg:w-[600px] h-[60px]  mt-8  rounded-2xl flex gap-4 justify-center 
     items-center bg-[#20293A]  shadow-lg relative px-4 text-white"
     >
       <Image src={SearchSvg} alt="search icon " className=" stroke-[#4A55ff]" />
