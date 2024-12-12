@@ -18,7 +18,7 @@ export default function Profile({ user }: { user?: User }) {
           alt="Profile picture"
         />
       </div>
-      <div className="flex flex-wrap gap-6 ml-48 my-5">
+      <div className="flex flex-wrap gap-6 w-96 2xl:w-full ml-48 my-5">
         <div className="bg-[#111729] rounded-xl p-4 px-6 text-white flex gap-3">
           <span className="text-[#4A5567]">Follower |</span>
           {user ? user.followers || "0" : "2789"}
