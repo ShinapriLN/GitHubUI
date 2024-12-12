@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { User } from "../utils/definitions";
-import { Divider } from "@nextui-org/divider";
 
 export default function Profile({ user }: { user?: User }) {
   return (
