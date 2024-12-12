@@ -41,7 +41,7 @@ export const SearchIcon = ({ className }: { className: string }) => {
 export default function Search({ setUser }: { setUser: (user: User) => void }) {
   const [searchValue, setSearchValue] = useState<string>("");
   const valueRef = useRef<HTMLInputElement>(null);
-  const [isFetch, setIsFetch] = useState(!false);
+  const [isFetch, setIsFetch] = useState(false);
 
   const [searchUser, setSearchUser] = useState<{
     userinfo: { data: User };
