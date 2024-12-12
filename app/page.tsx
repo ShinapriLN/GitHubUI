@@ -33,8 +33,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 select-none">
           {repos.length > 0 ? (
             repos.map((repo, idx) => (
-              <a href={repo.html_url}>
-                <Card key={idx} repo={repo} />
+              <a key={idx} href={repo.html_url}>
+                <Card repo={repo} />
               </a>
             ))
           ) : (
