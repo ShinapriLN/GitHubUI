@@ -1,0 +1,37 @@
+{
+  "name": "gitprofile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/card": "^2.2.5",
+    "@nextui-org/input": "^2.4.4",
+    "@nextui-org/skeleton": "^2.2.3",
+    "@nextui-org/system": "^2.4.4",
+    "@nextui-org/theme": "^2.4.1",
+    "@octokit/rest": "^21.0.2",
+    "@octokit/types": "^13.6.2",
+    "axios": "^1.7.9",
+    "framer-motion": "^11.13.1",
+    "motion": "^11.13.5",
+    "next": "15.0.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "encoding": "^0.1.13",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "15.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
