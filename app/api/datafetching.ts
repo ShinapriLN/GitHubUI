@@ -1,12 +1,14 @@
 "use server";
 import axios from "axios";
 
+const baseUlr = "https://git-hub-ui-hazel.vercel.app";
+
 export async function userFetching(username: string) {
-  const result = await axios.get(`http://localhost:3000/api/user/${username}`);
+  const result = await axios.get(`${baseUlr}/api/user/${username}`);
   return result.data;
 }
 
 export async function repoFetching(username: string) {
-  const result = await axios.get(`http://localhost:3000/api/repo/${username}`);
+  const result = await axios.get(`${baseUlr}/api/repo/${username}`);
   return result.data;
 }
