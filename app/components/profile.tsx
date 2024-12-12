@@ -5,7 +5,7 @@ export default function Profile({ user }: { user?: User }) {
   return (
     <div className="flex relative">
       {/* <Image src={chirld} alt="some"  /> */}
-      <div className="w-36 h-36 bg-[#20293A] p-2 rounded-2xl absolute -top-12">
+      <div className="w-28 h-28 lg:w-36 lg:h-36 bg-[#20293A] p-2 rounded-2xl absolute -top-12">
         {/* <div className="bg-white h-full w-full rounded-xl"></div> */}
         <Image
           src={
@@ -18,7 +18,7 @@ export default function Profile({ user }: { user?: User }) {
           alt="Profile picture"
         />
       </div>
-      <div className="flex flex-wrap gap-6 ml-48 my-5">
+      <div className="flex flex-wrap gap-6 mt-20 sm:mt-0 ml-0 sm:ml-48 my-5">
         <div className="bg-[#111729] rounded-xl p-4 px-6 text-white flex gap-3">
           <div className="text-[#4A5567]">Follower</div>
           <div className="bg-[#4A5567] m-0 w-[0.05rem]"></div>
