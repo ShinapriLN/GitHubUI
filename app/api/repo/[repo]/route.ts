@@ -5,9 +5,9 @@ import { Octokit } from "@octokit/rest";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { repo: string } }
+  { params }: { params: Promise<{ repo: string }> }
 ) {
-  const user = params.repo;
+  const user = (await params).repo;
 
   const octokit = new Octokit({
     auth: process.env.GIT_TOKEN,
