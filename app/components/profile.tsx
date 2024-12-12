@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { User } from "../utils/definitions";
+import { Divider } from "@nextui-org/divider";
 
 export default function Profile({ user }: { user?: User }) {
   return (
@@ -18,17 +19,20 @@ export default function Profile({ user }: { user?: User }) {
           alt="Profile picture"
         />
       </div>
-      <div className="flex flex-wrap gap-6 w-96 2xl:w-full ml-48 my-5">
+      <div className="flex flex-wrap gap-6 ml-48 my-5">
         <div className="bg-[#111729] rounded-xl p-4 px-6 text-white flex gap-3">
-          <span className="text-[#4A5567]">Follower |</span>
+          <div className="text-[#4A5567]">Follower</div>
+          <div className="bg-[#4A5567] m-0 w-[0.05rem]"></div>
           {user ? user.followers || "0" : "2789"}
         </div>
         <div className="bg-[#111729] rounded-xl p-4 px-6 text-white flex gap-3">
-          <span className="text-[#4A5567]">Following |</span>
+          <div className="text-[#4A5567]">Following</div>
+          <div className="bg-[#4A5567] m-0 w-[0.05rem]"></div>
           {user ? user.following || "0" : " 0"}
         </div>
         <div className="bg-[#111729] rounded-xl p-4 px-6 text-white flex gap-3">
-          <span className="text-[#4A5567]">Location |</span>
+          <div className="text-[#4A5567]">Location</div>
+          <div className="bg-[#4A5567] m-0 w-[0.05rem]"></div>
           {user ? user.location || "This world" : "San Francisco, CA"}
         </div>
       </div>

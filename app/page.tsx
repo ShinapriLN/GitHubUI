@@ -24,7 +24,7 @@ export default function Home() {
       <div className="flex w-full h-56 bg-cover bg-no-repeat justify-center bg-[url('/resources/hero-image-github-profile.png')]">
         <Search setUser={setUser} />
       </div>
-      <div className="w-[100%] px-4 sm:16 lg:px-32 xl:px-56 text-white">
+      <div className="w-[100%] px-4 sm:16 lg:px-28 xl:px-36 text-white">
         <Profile user={user} />
         <h1 className="text-[2rem] pt-3 py-1">
           {user ? user?.login : "GitHub"}

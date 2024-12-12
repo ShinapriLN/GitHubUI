@@ -75,12 +75,12 @@ export default function Search({ setUser }: { setUser: (user: User) => void }) {
       className=" w-[90%] lg:w-[600px] h-[60px]  mt-8  rounded-2xl flex gap-4 justify-center 
     items-center bg-[#20293A]  shadow-lg relative px-4 text-white"
     >
-      <Image src={SearchSvg} alt="search icon" />
+      <Image src={SearchSvg} alt="search icon " className=" stroke-[#4A55ff]" />
       <input
         ref={valueRef}
         onKeyDown={(e) => e.key === "Enter" && handleEnter()}
         className="w-full h-full rounded-xl py-5  
-      bg-[#20293A] focus:outline-none  "
+      bg-[#20293A] focus:outline-none placeholder:text-[#4A5567] "
         placeholder="Username"
       />
       <div
