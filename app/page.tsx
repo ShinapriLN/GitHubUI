@@ -30,9 +30,13 @@ export default function Home() {
           {user ? user?.login : "GitHub"}
         </h1>
         <p>{user ? user.bio : "How people build software."}</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 select-none">
           {repos.length > 0 ? (
-            repos.map((repo, idx) => <Card key={idx} repo={repo} />)
+            repos.map((repo, idx) => (
+              <a href={repo.html_url}>
+                <Card key={idx} repo={repo} />
+              </a>
+            ))
           ) : (
             <>
               <Card
